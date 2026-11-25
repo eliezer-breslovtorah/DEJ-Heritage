@@ -15,7 +15,7 @@ For local testing, run `python3 -m http.server 8000 --directory docs` and open `
 
 GitHub Pages serves static files. To deliver contact messages, configure an HTTPS form endpoint supporting cross-origin POSTs with form data and JSON responses, such as a Formspree form owned by the foundation. Set and verify the recipient with the provider and enable its spam controls. Put the public endpoint in the contact form's `data-endpoint` attribute in both `docs/index.html` and `docs/home/index.html`. Keep credentials out of the repository.
 
-The preview displays a status explaining that delivery is disconnected. After connecting the endpoint, submit a labeled test from the Pages preview and confirm the intended inbox receives all four fields. The cart mirrors the observed empty state and has no checkout. Any future live checkout would need a separate payment service.
+Both homepage routes use the foundation’s Formspree endpoint. After changing the endpoint or notification recipient, submit a labeled test from the Pages preview and confirm the intended inbox receives all four fields. The cart mirrors the observed empty state and has no checkout. Any future live checkout would need a separate payment service.
 
 ## Connect dejheritage.org after approval
 
