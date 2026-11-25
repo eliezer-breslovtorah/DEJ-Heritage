@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DEJ International Heritage Foundation is dedicated to empowering communities worldwide through charitable programs including food, clothing, shelter, and religious support.">
+  <title>DEJ International Heritage Foundation | Join Us in Making a Difference</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/contact.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="layout">
+      <a class="skip" href="#page">Skip to Content</a>
+      <a class="site-title" href="./">DEJ International Heritage Foundation</a>
+    </div>
+  </header>
+  <main id="page" tabindex="-1">
+    <section class="hero" aria-labelledby="mission">
+      <div class="layout columns">
+        <div class="hero-copy">
+          <h1 id="mission">Empowering Communities with Care</h1>
+          <p>Welcome to our non-profit community, where innovation meets impact. We are committed to creating sustainable solutions to address the challenges that matter most.</p>
+          <p>We distribute food, clothing, shelter and religious guidance internationally.</p>
+        </div>
+        <img class="hero-photo" src="assets/israeli-flag.webp" alt="Israeli flag flying on a pole against a background of stone wall and clear blue sky." width="1250" height="1667">
+      </div>
+    </section>
+    <section class="contact" aria-labelledby="contact">
+      <div class="layout columns">
+        <div class="contact-copy">
+          <h2 id="contact">Contact Us</h2>
+          <p>Interested in working together? Fill out some info and we will be in touch shortly. We can’t wait to hear from you!</p>
+        </div>
+        <form id="contact-form" method="post" data-endpoint="">
+          <fieldset>
+            <legend>Name</legend>
+            <div class="names">
+              <label>First Name <small>(required)</small><input name="first_name" autocomplete="given-name" required></label>
+              <label>Last Name <small>(required)</small><input name="last_name" autocomplete="family-name" required></label>
+            </div>
+          </fieldset>
+          <label>Email <small>(required)</small><input type="email" name="email" autocomplete="email" required></label>
+          <label>Message <small>(required)</small><textarea name="message" rows="4" required></textarea></label>
+          <button type="submit" disabled>Send</button>
+          <p id="form-status" class="form-status" role="status"></p>
+          <noscript>Contact form submission requires JavaScript.</noscript>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
